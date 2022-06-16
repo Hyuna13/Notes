@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: rgb(102, 224, 184);
+}
+
+.wrapper {
+  margin: 50px;
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, 265px);
+}
+
+.wrapper li {
+  background-color: white;
+  list-style: none;
+  height: 250px;
+  border-radius: 5px;
+  padding: 15px 20px 20px;
+}
+
+.add-box, .icon, .bottom-content,
+.settings, .menu li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-box {
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.add-box .icon {
+  width: 78px;
+  height: 78px;
+  color: rgb(102, 224, 184);
+  border: 2px dashed rgb(102, 224, 184);
+  border-radius: 50%;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.add-box p {
+  margin-top: 20px;
+  color: rgb(102, 224, 184);
+  font-weight: 500;
+}
+
+.wrapper .note {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.note p {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.note span {
+  display: block;
+  color: #575757;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.note .bottom-content {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.bottom-content span {
+  color: #6d6d6d;
+  font-size: 14px;
+}
+
+.bottom-content .settings i {
+  cursor: pointer;
+  color: #6d6d6d;
+  font-size: 15px;
+}
+
+.settings {
+  position: relative;
+}
+
+.settings .menu {
+  position: absolute;
+  bottom: 0;
+  right: -5px;
+  padding: 5px 0;
+  background-color: #fff;
+  border-radius: 4px;
+  transform: scale(0);
+  transform-origin: bottom right;
+  box-shadow: 0 0 6px rgba(0,0,0,0.15);
+  transition: trasnform 0.2s ease;
+}
+
+.settings:hover .menu {
+  transform: scale(1);
+}
+
+.settings .menu li {
+  height: 25px;
+  font-size: 16px;
+  border-radius: 0;
+  padding: 17px 15px;
+  cursor: pointer;
+  justify-content: flex-start;
+}
+
+.menu li:hover {
+  background-color: #f5f5f5;
+}
+
+.menu li i {
+  padding-right: 8px;
+}

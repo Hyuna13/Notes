@@ -147,9 +147,15 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.popup-box, .popup-bo .popup {
+.popup-box, .popup-box .popup {
   opacity: 0;
   pointer-events: none;
+  transition: all 0.25s ease;
+}
+
+.popup-box.show, .popup-box.show .popup {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .popup .content {
@@ -196,6 +202,10 @@ form .row label {
   padding: 0 15px; 
   border-radius: 4px;
   border: 1px solid #999;
+}
+
+.content form input {
+  padding: 8px 15px;
 }
 
 .content form textarea {

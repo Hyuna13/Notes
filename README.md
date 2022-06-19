@@ -1,3 +1,3 @@
 # Notes
-Building Notes by using JavaScript
-Inspired by CodingNepal
++ Building Notes by using JavaScript
++ Inspired by CodingNepal

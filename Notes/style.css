@@ -60,6 +60,11 @@ body {
   flex-direction: column;
 }
 
+.note .details {
+  max-height: 165px;
+  overflow-y: auto;
+}
+
 .note p {
   font-size: 22px;
   font-weight: 500;
@@ -105,7 +110,7 @@ body {
   transition: trasnform 0.2s ease;
 }
 
-.settings:hover .menu {
+.settings.show .menu {
   transform: scale(1);
 }
 
